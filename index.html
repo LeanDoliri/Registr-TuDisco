@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrá tu Disco</title>
+    <link href="/style/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Registrá tu disco</h1>
+            <p id="description" class="description text-center">
+                Completa el siguiente formulario para agregar tu disco a nuestra biblioteca.
+            </p>
+        </header>
+        <hr>
+        <form id="survey-form">
+            <h3>Datos Personales</h3>
+            <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required />
+            </div>
+            <div class="form-group">
+                <label id="surname-label" for="surname">Apellido</label>
+                <input type="text" name="surname" id="apellido" class="form-control" placeholder="Apellido" required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Edad<span class="clue"></label>
+                <input type="number" name="edad" id="number" min="10" max="99" class="form-control" placeholder="Edad"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@gmail.com"
+                    required />
+            </div>
+            <hr>
+            <h3>Datos del Artista</h3>
+            <div class="form-group">
+                <label id="artist-label" for="artist">Nombre del Artista / Banda</label>
+                <input type="text" name="artista" id="email" class="form-control" placeholder="Artista" required />
+            </div>
+            <div class="form-group">
+                <label id="sitioweb-label" for="sitioweb">Sitio Web</label>
+                <input type="url" name="sitioweb" id="sitioweb" class="form-control" placeholder="Sitio Web" />
+            </div>
+            <hr>
+            <h3>Datos del Album</h3>
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">Selecciona el formato</label>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option value='single'>Single</option>
+                    <option value="ep">EP</option>
+                    <option value="album">Album</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>¿Es un album inédito?</p>
+                <label class='input-radio'>
+                    <input name="album-inedito" value="si" type="radio" class="input-radio" />Si</label>
+                <label class='input-radio'>
+                    <input name="album-inedito" value="no" type="radio" class="input-radio" />No</label>
+            </div>
+            <div class="form-group">
+                <label id="title-label" for="titulo">Título del Album</label>
+                <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Titulo" required />
+            </div>
+            <div class="form-group">
+                <label id="year-label" for="number">
+                    Año de Lanzamiento
+                </label>
+                <input type="number" name="año" id="año" min="0" max="2022" class="form-control" placeholder="Año"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="cover-label" for="file">
+                    Portada
+                </label>
+                <input type="file" name="file" id="file" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <p>
+                    Selecciona el/los generos correspondientes
+                </p>
+                <label class='checkbox-label'>
+                    <input name="genero" value="cumbia" type="checkbox" class="input-checkbox" />Cumbia</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="hiphop" type="checkbox" class="input-checkbox" />Hip Hop</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="dance-electronica" type="checkbox" class="input-checkbox" />Dance /
+                    Electrónica</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="folk" type="checkbox" class="input-checkbox" />Folk</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="jazz-clues" type="checkbox" class="input-checkbox" />Jazz /
+                    Blues</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="soul-r&b" type="checkbox" class="input-checkbox" />Soul / R & B</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="rock-metal-punk" type="checkbox" class="input-checkbox" />Rock / Metal /
+                    Punk</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="funk" type="checkbox" class="input-checkbox" />Funk</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="clasica" type="checkbox" class="input-checkbox" />Clásica</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="experimental" type="checkbox"
+                        class="input-checkbox" />Experimental</label>
+                <label class='checkbox-label'>
+                    <input name="genero" value="otro" type="checkbox" class="input-checkbox" />Otro</label>
+            </div>
+
+            <div class="form-group">
+                <p>Descripción</p>
+                <textarea id="descripcion" class="input-textarea" name="comment" placeholder="Descripción"></textarea>
+            </div>
+
+            <div class="sumbit">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            Proyecto de "Formulario de Encuesta" realizado en el curso de "Diseño Web Responsivo" de FreeCodeCamp.<br>
+            Leandro Doliri
+        </p>
+    </footer>
+</body>
+
+</html>

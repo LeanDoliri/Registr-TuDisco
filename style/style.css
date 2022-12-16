@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgb(225, 255, 200);
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+      360deg, rgba(0, 153, 68, 0.5),
+      rgba(0, 153, 68, 0.1)
+    ),
+url(https://cdn.pixabay.com/photo/2016/08/15/16/48/vinyl-1595847_960_720.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  border-radius: 15px;
+  width: 60%;
+  margin: 50px auto 0 auto;
+  background-color: rgba(0, 70, 30, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  margin-top: 5px;
+  width: 100%;
+}
+
+header {
+  padding: 15px;
+  text-align: center;
+}
+
+#survey-form {
+  width: 80%;
+}
+
+label {
+  display: block;
+  margin: 10px 0px 0px 0px;
+  font-weight: 400;
+}
+
+input, select, option, textarea {
+  color: black;
+  width: 98%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 5px 0px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  outline: none;
+  outline-offset: 0px;
+}
+
+.input-radio {
+  display: inline;
+  width: auto;
+  margin: 10px 5px 15px 0px;
+  font-weight: 200;
+}
+
+#file {
+  width: 98%;
+  color: rgb(225, 255, 200);
+}
+
+.checkbox-label {
+  display: block;
+  width: auto;
+  color: rgb(225, 255, 200);
+  margin: 0px 5px 0px 15px;
+  font-weight: 200;
+}
+
+.input-checkbox {
+  display: inline;
+  width: auto;
+  margin: 10px 5px 0px 0px;
+}
+
+button {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0, 70, 30, 0.95);
+  background: rgb(225, 255, 200);
+  margin: 30px 0px;
+}
+
+p {
+  margin: 10px 0px 0px 0px;
+  font-weight: 400;
+}
+
+.sumbit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 60%;
+  margin: 50px auto 0 auto;
+  background-color: rgba(0, 70, 30, 0.95);
+}
+
+footer p {
+  padding: 10px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 0.8rem;
+  }
+  
+  .container {
+    width: 80%;
+  }
+  
+  footer {
+    width: 80%;
+  }
+}
